@@ -11,6 +11,27 @@
     font-family: "Trebuchet MS", sans-serif;
     padding-top:80px;
 }  
+          button {
+    background-color: #8e5bb7;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #75449d;
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 25px;
+    font-size: 18px;
+}
  
  .container {
             background-color: rgba(255, 255, 255, 0.25);
@@ -53,6 +74,11 @@
 
 <body>
      <div class="container">
+     <button onclick="showMessage()">Πάτα εδώ...</button>
+
+<p id="secretMessage" class="hidden-message">
+    Είσαι λίγα click μακριά...
+</p>   
 
      <h1>Έχεις βρει την αρχή.</h1>
 
@@ -74,4 +100,9 @@
 
 
 </body>
+     <script>
+    function showMessage() {
+        document.getElementById("secretMessage").style.display = "block";
+    }
+</script>
 </html>

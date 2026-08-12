@@ -11,27 +11,7 @@
     font-family: "Trebuchet MS", sans-serif;
     padding-top:80px;
 }  
-          button {
-    background-color: #8e5bb7;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 25px;
-    font-family: "Trebuchet MS", sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #75449d;
-}
-
-.hidden-message {
-    display: none;
-    margin-top: 25px;
-    font-size: 18px;
-}
+          
  
  .container {
             background-color: rgba(255, 255, 255, 0.25);
@@ -57,6 +37,27 @@ button:hover {
             border-top: 1px solid rgba(0, 0, 0, 0.3);
             margin: 25px auto;
  }
+button {
+    background-color: #8e5bb7;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #75449d;
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 25px;
+    font-size: 18px;
+}
 
 
  .signature {
@@ -74,17 +75,19 @@ button:hover {
 
 <body>
      <div class="container">
-     <button onclick="showMessage()">Πάτα εδώ...</button>
-
-<p id="secretMessage" class="hidden-message">
-    Είσαι λίγα click μακριά...
-</p>   
+     
 
      <h1>Έχεις βρει την αρχή.</h1>
 
   <hr>
      <p>Αλλά πρέπει να ψάξεις λίγο καλύτερα...</p>
      <p>Ίσως εκεί που <u>εσύ</u> δεν βλέπεις.</p>
+
+     <button onclick="showMessage()">Πάτα εδώ...</button>
+
+     <p id="secretMessage" class="hidden-message">
+    Είσαι λίγα click μακριά...
+</p>   
      <p>🗝️</p>
  
      <!-- Μπράβο αν έφτασες μέχρι εδώ -->
@@ -93,6 +96,8 @@ button:hover {
      <!-- Προσπάθησε να ξεκινήσεις λίγο αντίστροφα από αυτό που σκέφτηκες -->
      <!-- 5 18 / 24 16 1 3 1 / 20 11 15 16 -->
      <!--🤍-->
+
+     
      
      <div class="signature">Φ</div>
 

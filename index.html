@@ -107,11 +107,17 @@ button:hover {
      
         <div class="signature">Φ🌻</div>
      </div>
- <script>
+<script>
     function showMessage() {
-        document.getElementById("secretMessage").style.display = "block";
+        const message = document.getElementById("secretMessage");
+
+        if (message.style.display === "block") {
+            message.style.display = "none";
+        } else {
+            message.style.display = "block";
+        }
     }
-  </script>
+</script>
 
 </body>
  </html>

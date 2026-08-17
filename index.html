@@ -59,10 +59,34 @@ button:hover {
     background-color: #75449d;
 }
 
+button {
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
 .hidden-message {
     display: none;
     margin-top: 25px;
     font-size: 18px;
+}
+
+
+.hidden-message.show {
+    display: block;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
  .signature {
@@ -108,15 +132,10 @@ button:hover {
         <div class="signature">Φ🌻</div>
      </div>
 <script>
-    function showMessage() {
-        const message = document.getElementById("secretMessage");
-
-        if (message.style.display === "block") {
-            message.style.display = "none";
-        } else {
-            message.style.display = "block";
-        }
-    }
+     function showMessage() {
+    document.getElementById("secretMessage").classList.toggle("show");
+}
+    
 </script>
 
 </body>
